@@ -1,4 +1,3 @@
-
 /* 
 
     You can write your own styles here...
@@ -10,3 +9,151 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body {
+
+    background-image: url(https://images7.alphacoders.com/411/thumb-1920-411820.jpg);
+}
+
+.taskManager {
+    background-color: #93a69a;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgb(52, 1, 1);
+    flex-direction: column;
+    align-self: center;
+
+}
+
+.taskManager,
+.content,
+.toDoList,
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.toDoList {
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1,
+span,
+li,
+input,
+.button-1,
+.footer {
+    font-family: 'Nerko One';
+}
+
+h1,
+.footer {
+    color: #020802;
+    text-shadow: 2px 1px 1px #d3622e;
+    font-weight: 100;
+}
+
+input,
+li {
+    color: #5e2b3a;
+    font-size: 1.5vw;
+}
+
+h1 {
+    font-size: 4.4vw;
+
+}
+
+input {
+    margin: 10px;
+    width: 18vw;
+    border: 3px solid #85a2a1;
+    ;
+    border-radius: 8px;
+    background-color: #8c8570;
+    outline: none;
+}
+
+.footer {
+    font-size: 1.5vw;
+}
+
+ul {
+    width: 100%;
+    padding: 0px;
+}
+
+li {
+    margin: 10px 25px 0px 25px;
+    list-style: none;
+    border-bottom: 1px solid #3e8baa2a;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+span {
+    opacity: 0.5;
+    margin-bottom: 5px;
+    color: #4263a3;
+    font-size: 1vw;
+}
+
+.button-1 {
+    border-style: none;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 5.35vh;
+    width: 3.5vw;
+    margin-right: 1vw;
+
+}
+
+.button-1,
+.fa-solid {
+    color: #FFFFFF;
+    background-color: #3d4c4c;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px #aeb4b4;
+    font-size: 1.5vw;
+}
+
+.button-1:hover,
+.button-1:focus,
+.fa-solid:hover,
+.fa-solid:focus {
+    background-color: #427b7a;
+}
+
+.fa-solid {
+    cursor: pointer;
+    padding: 5px 7px 5px 7px;
+}
+
+a {
+    text-decoration: none;
+    color: #f0e5c7;
+    background:
+        linear-gradient(to right,
+            #99dbd9,
+            #99dbd9),
+        linear-gradient(to right,
+            #012b3c,
+            rgb(46, 154, 36),
+            rgb(120, 105, 151));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+a:hover {
+    background-size: 0 3px, 100% 3px;
+
+}
+
+.fa-solid {
+    display: none;
+}
+
+.sen:hover .fa-solid {
+    display: block;
+}
